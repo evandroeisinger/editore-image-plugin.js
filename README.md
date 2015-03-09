@@ -4,10 +4,10 @@
 Available on npm: `npm install editore-image-plugin` or [directly download](https://github.com/evandroeisinger/editore-image-plugin.js/raw/master/src/editore-image-plugin.js)
 
 #### basic usage
-It's easy to use! Load [editor.js](https://github.com/evandroeisinger/editore.js) into your application, instantiate it and register the new **insertion** plugin.
+It's easy to use! Load [editore.js](https://github.com/evandroeisinger/editore.js) into your application, instantiate it and register the new **insertion** plugin.
 
 ```javascript
-var editor = new Editor(document.getElementById('editor')),
+var editore = new Editore(document.getElementById('editor')),
     ImagePlugin;
 
 // Global
@@ -16,7 +16,7 @@ ImagePlugin = window.EditoreImagePlugin;
 ImagePlugin = require('editore-image-plugin');
 
 // then register!
-editor.registerInsertComponent(ImagePlugin, {
+editore.registerInsertComponent(ImagePlugin, {
   // method called after the image has been uploaded
   uploadComplete: function(image, figure) {
     // arguments
